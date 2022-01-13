@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- FONT-AWESOME -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">    
+    
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Outfit&display=swap" rel="stylesheet">
+
+    <title>NAGINI</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <div class="container-fluid">
+                <div>
+                    <a id="logo" class="navbar-brand" href="#"><img src="./imagenes/logo.PNG" alt="logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#nosotros">SOBRE NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#productos">PRODUCTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#clientes">NUESTROS CLIENTES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#preguntas">PREGUNTAS FRECUENTES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contactanos">PEDINOS TU FIGURA</a>
+                        </li>
+                        <li id="liRedes" class="nav-item">
+                            <a class="sinHover" href="https://www.facebook.com/nagini3d/" Target="_blank"><button class="buttonRedes"><i class="fab fa-facebook-f"></i></button></a>
+                            <a class="sinHover" href="https://www.instagram.com/nagini3d/" Target="_blank"><button class="buttonRedes" Target="_blank"><i class="fab fa-instagram"></i></button></a>
+                            <a class="sinHover" href=""><button class="buttonRedes" Target="_blank"><i class="fab fa-whatsapp"></i></i></button></a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <a  href="#"><button id="up"><i class="fas fa-chevron-up"></i></button></a>
+
+
+        <section id="home" class="d-flex flex-column justify-content-center align-items-center">
+            <h1 class="fuenteMuyGrande negrita text-center">Imprimimos <br> tus ideas</h1>
+            <a href="#contactanos"><button class="button">CONOCÉ MÁS</button></a>
+        </section>
+
+        <section id="nosotros" class="d-flex flex-row">
+            <div>
+                <img src="imagenes/sobre nosotros.png" alt="sobre nosotros">
+            </div>
+
+            <div id="sobreNosotros" class="d-flex flex-column justify-content-center w-100 paddingTexto">
+                <h2 class="colorSalmon fuenteChica fuente2">Sobre nosotros</h2>
+                <h3 class="colorVioleta fuenteMediana negrita">NAGINI 3D</h3>
+                <p class="colorVioleta">Es una startup familiar que nace de la fusión entre el amor por el detalle y la necesidad de ofrecer productos de calidad para aquellos que compartan el mismo sentimiento que nosotros. <br> <br>
+                    Principalmente nuestros productos se relacionan con el cine, series, anime/manga y la cultura asiatica. <br><br>
+                    Nuestro objetivo es brindar productos únicos y especiales fuera de serie a un precio asequible. <br><br>
+                    No solo imprimimos, sino que diseñamos y trabajamos con otras técnicas para llegar a un producto único.
+                    Desde la concepción de la idea, diseño, fabricación y post procesado ponemos hasta la última gota de sudor para que el producto cumpla nuestros estándares de calidad. <br><br>
+                    Este emprendimiento también viene a satisfacer nuestras ganas de aprender, diseñar y fabricar tratando de generar el menor impacto posible en el medio ambiente. La huella de carbono por fabricación in house es infinitesimal comparado con un producto fabricado en otra parte del mundo e importado, además nuestros productos son fabricados bajo demanda y pensados para durar, con lo cual tiene por ideal el reducir la cantidad de residuos o scrap generados. <br><br>
+                    Nagini 3D viene a tratar de romper los esquemas de producción y distribución normal, flexibilizando la producción y otorgándole al cliente el poder de personalización sobre su producto, algo impensable en termino de costos para productos fabricados en masa. 
+                    </p>
+            </div>
+        </section>
+
+        <section id="productos" >
+            <div>
+                <h2 class="text-center fuenteGrande colorVioleta paddingTitulo negrita">NUESTROS PRODUCTOS</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-6 paddingCero">
+                    <img id="productosImg" src="imagenes/Home 3.png" width="100%" height="931px" alt="home 3">
+                </div>
+
+                <div class="col-6 d-flex flex-column justify-content-center align-items-center paddingTexto">
+                    <h2 class="colorSalmon fuenteChica fuente2">3D Printers</h2>
+                    <h3 class="colorVioleta fuenteMediana negrita text-center">NOMBRES DE LAS <br> IMPRESORAS</h3>
+                    <p class="colorVioleta text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, officiis iusto! Corrupti, necessitatibus optio consequuntur provident tenetur, eius quidem aliquam omnis in similique repellat sint repellendus? Ut soluta reiciendis qui, exercitationem autem, laborum maiores inventore eum, placeat totam nemo beatae quos rerum neque itaque illo quibusdam eveniet cumque veniam voluptatibus.</p>
+                    <a href="#contactanos"><button class="button">CONTACTANOS</button></a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6 d-flex flex-column justify-content-center align-items-center paddingTexto">
+                    <h2 class="colorSalmon fuenteChica fuente2">Impresiones en 3D</h2>
+                    <h3 class="colorVioleta fuenteMediana negrita text-center">PROYECTOS <br> EN 3D</h3>
+                    <p class="colorVioleta text-center"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, corporis. Itaque quo quibusdam in praesentium quos eveniet accusamus ab consequatur obcaecati, vero nemo blanditiis commodi voluptatum omnis amet est iste ipsam cum error facere animi magni! Fugiat et est exercitationem doloremque deserunt amet nulla, eligendi ducimus, atque laboriosam sit tempore!</p>
+                    <a href="#contactanos"><button class="button">CONTACTANOS</button></a>
+                </div>
+
+                <div class="col-6 paddingCero">
+                    <img src="imagenes/Productos 2.png" width="98.8%" height="931px" alt="producto 2">
+                </div>
+            </div>
+        </section>
+
+        <section id="clientes">
+            <div>
+                <h2 class="text-center fuenteGrande paddingTitulo negrita">NUESTROS CLIENTES</h2>
+            </div>
+
+<!--             <div class="comillas">
+                <div>
+                    <img src="./imagenes/comillas.png" alt="comillas">
+                    <img src="./imagenes/comillasInv.png" alt="comillas invertidas">
+                </div>
+                <div>
+                    <img src="./imagenes/comillas.png" alt="comillas">
+                    <img src="./imagenes/comillasInv.png" alt="comillas invertidas">
+                </div>
+            </div> -->
+
+            <div class="paddingBottom">
+                <div>
+                    <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, soluta. Magni esse et quae ipsa cum deleniti optio autem ut adipisci, alias repellendus doloribus at consequuntur. Iste esse error reiciendis ratione laborum, officiis voluptatibus impedit earum placeat quam! Eveniet et reiciendis labore dicta pariatur quidem nesciunt sapiente esse consectetur aut.</p>
+                    <p class="colorSalmon text-center">Nombre <br> @usuarioIg</p>
+                </div>
+                <div>
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio accusantium delectus et reiciendis tempora porro animi pariatur quasi expedita error praesentium rerum eius suscipit iusto, soluta commodi veniam perferendis quae voluptatum ad illum. Non, quis quas! Laudantium illum animi ab totam vero aspernatur rerum a dicta non. Voluptas, porro velit.</p>
+                    <p class="colorSalmon text-center">Nombre <br> @usuarioIg</p>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, numquam atque mollitia quaerat aliquid magni similique voluptatibus deleniti ut quam cumque, doloribus harum eum natus. Beatae, eos soluta. Natus quod voluptatum adipisci eveniet sit facilis at odio consequatur, recusandae perferendis tempore alias placeat similique? Distinctio doloribus id cumque dicta eius!</p>
+                    <p class="colorSalmon text-center">Nombre <br> @usuarioIg</p>
+                </div>
+                <div>
+                    <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam neque suscipit ipsam deserunt ducimus, laudantium doloremque? Magni quos incidunt, deserunt ratione dignissimos corporis voluptate a beatae fugiat veritatis, in expedita! Eum eaque vero repudiandae repellat cupiditate cum numquam hic velit consequatur? Minima maiores non molestias sed. Saepe voluptate ipsum nemo.</p>
+                    <p class="colorSalmon text-center">Nombre <br> @usuarioIg</p>
+                </div>
+            </div>
+
+            <div>
+                <button class="button text-center">PEDINOS TU FIGURA FAVORITA</button>
+            </div>
+        </section>
+
+        <section id="preguntas">
+            <h2 class="text-center fuenteGrande colorVioleta paddingTitulo negrita">PREGUNTAS FRECUENTES</h2>
+
+            <div class="accordion container" id="accordionExample">
+                <div class="acordion">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed fuenteChica" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            ¿Qué es la impresión 3D? 
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body fuenteChica">
+                            Básicamente la impresión 3D consiste en partir de un diseño digital (formato STL u OBJ) y llevarlo a una pieza tridimensional tangible mediante la utilización diferentes tipos de polímeros depositados en superposiones de capas. <br><br>
+                            Si bien dentro de esta tecnología existen muchas variantes nosotros trabajamos, al momento, con FDM (Fused Deposition Modeling) utilizando termoplásticos como nylon, ABS, PLA, PETG, etc.  Esto nos permite una gran flexibilidad y agilidad a la hora de fabricar un producto en lotes de producción reducidos
+                        </div>
+                    </div>
+                </div>
+                <div class="acordion">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed fuenteChica" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            ¿Qué se puede imprimir?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body fuenteChica">
+                            Respuesta corta y tramposa... el cielo es el límite. Actualmente disponemos de impresoras con un volumen de 20x20x25 cm, con lo cual podemos generar productos de una sola pieza en dicho volumen o más grande si se divide en partes. Esto será algo que se consultara a la hora de la cotización. <br><br>
+                            Si el diseño existe se utilizará y si es posible diseñarlo se realizará (costo aparte a la impresión y mano de obra), dado que nuestro fuerte es el diseño mecánico los modelados orgánicos que no se encuentren en librería quedaran sujetos a revisión. <br><br>
+                            Pueden consultar algunos de nuestros trabajos en IG (aca va link) o en esta página en la sección de productos
+                            Algunos ejemplos de impresiones o diseños los podrá encontrar en Thinkgiverse, cults, mini Factory, etc (todo con link)
+                        </div>
+                    </div>
+                </div>
+                <div class="acordion">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed fuenteChica" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            ¿Imprimen picadores o cortantes?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body fuenteChica">
+                            Nop, todo lo que este en contacto con comida o productos que se consuman preferimos no hacerlos. 
+                            Si bien existen materiales aptos para consumo humano (como el PETG) la tecnología no lo es y mucho menos se poseen condiciones de laboratorio para evitar inclusiones de partículas presentes en el aire al momento de impresión. <br><br>
+                            En criollo: la impresora es un sistema y tiene un conjunto de partes metálicas y plásticas, es imposible purgar el sistema al 100% para garantizar que el plástico apto no este contaminado, aparte, si se imprime en un ambiente que este cargado con metales pesados o gases de escapes de autos parte de las partículas terminaran depositadas dentro del cortante, picador, etc.
+                            Al ser una tecnología relativamente nueva no hay muchos estudios o certificaciones sobre el impacto en la salud, pero preferimos mantenernos alejados.
+                        </div>
+                    </div>
+                </div>
+                <div class="acordion">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed fuenteChica" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            ¿Con qué materiales trabajan?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body fuenteChica">
+                            Nuestro principal insumo es el PLA, un plástico no derivado del petróleo y fabricado de manera sustentable. Tiene gran rigidez y buenas propiedades mecánicas hasta rangos de temperatura de lo 60°...
+                            Si vas a dejar nuestras figuras en el horno o un auto cerrado al sol de verano de salta por favor avisanos. <br><br>
+                            Adicionalmente trabajamos con otros materiales de acuerdo con la exigencia/necesidades del producto, por ejemplo: ABS, PETG, TPU (flexible), etc.
+
+                        </div>
+                    </div>
+                </div>
+                <div class="acordion">
+                    <h2 class="accordion-header fuenteChica" id="headingFive">
+                        <button class="accordion-button collapsed fuenteChica" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            ¿Cómo cotizo, compro y cúando recibo el producto?
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body fuenteChica">
+                            Si te gusta un producto o requerís de nuestros servicios por favor consúltanos a través de nuestras redes. Aquellos productos que mantenemos en cartera tienen un precio fijado (mantenemos en cartera pero no producimos por stock), 
+                            aquellos que no probablemente requieran una cotización considerando si existe diseño o no (hay que diseñar), el tiempo de impresión y la mano de obra. Con el precio también se informara el tiempo de producción. <br><br>
+                            Si queres el producto nos avisas via mensaje privado y te enviaremos el código de CVU de Uala para señar el 50% del valor, una vez realizado comenzamos el trabajo. Te iremos contando el avance de tu producto y cuando esté listo te avisaremos que está listo para retirar (en ese momento se deberá abonar el 50% restante)
+
+                        </div>
+                    </div>
+                </div>
+                <div class="acordion">
+                    <h2 class="accordion-header" id="headingSix">
+                        <button class="accordion-button collapsed fuenteChica" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            ¿Cómo recibo el producto? 
+                        </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body fuenteChica">
+                            Podes retirar tu producto en zona plaza Flores, puede ser enviado dentro de CABA mediante E-pick o ser despachado al conurbano e interior del país mediante Paq.ar.
+                            En este último caso podes revisar tu sucursal más cercana del correo argentino acá (link) o informarnos tu dirección para enviar a domicilio. 
+                            Si requieren envío deben comentarnos para pasar la cotización del mismo, esto es un monto aparte al producto.
+
+                        </div>
+                    </div>
+                </div>
+                <div class="acordion">
+                    <h2 class="accordion-header fuenteChica" id="headingSeven">
+                        <button class="accordion-button collapsed fuenteChica" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                            ¿Tienen local?
+                        </button>
+                    </h2>
+                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body fuenteChica">
+                            De momento no poseemos local pero los retiros o coordinación de consultas pueden realizarse en zona plaza Flores
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contactanos">
+            <h2 class="text-center fuenteGrande paddingTitulo negrita">CONTACTANOS</h2>
+            <form action="" class="container d-flex flex-column align-items-center w-100">
+                <div>
+                    <input class="contactanosInput" type="text" placeholder="NOMBRE Y APELLIDO">
+                    <input class="contactanosInput" type="email" placeholder="MAIL">
+                    <input class="contactanosInput" type="tel" placeholder="TELÉFONO">
+                </div>
+                <div >
+                    <textarea class="textarea" placeholder="MENSAJE" ></textarea>
+                </div>
+                <input class="button" type="submit">
+            </form>
+        </section>
+    </main>
+
+
+
+    <footer id="footer">
+        <div id="footerLinks" class="row">
+            <div class="col-2 d-flex justify-content-center align-items-center">
+                <a href="#"><img src="./imagenes/logoGrande.PNG" width="200px" alt="logo"></a>
+            </div>
+
+            <div class="col-2 d-flex flex-column justify-content-center">
+                <a class="colorVioleta fuenteChica negrita" href="#">HOME</a>
+                <a class="colorVioleta fuenteChica negrita" href="#nosotros">SOBRE NOSOTROS</a>
+                <a class="colorVioleta fuenteChica negrita" href="#productos">PRODUCTOS</a>
+            </div>
+
+            <div class="col-2 d-flex flex-column justify-content-center">
+                <a class="colorVioleta fuenteChica negrita" href="#clientes">NUESTROS CLIENTES</a>
+                <a class="colorVioleta fuenteChica negrita" href="#preguntas">PREGUNTAS FRECUENTES</a>
+                <a class="colorVioleta fuenteChica negrita" href="#contactanos">CONTACTANOS</a>
+            </div>
+
+            <div class="col-6 d-flex flex-column align-items-center">
+                <div>
+                    <input id="inputCorreo" class="colorVioleta negrita sombra" type="text" placeholder="CORREO">
+                    <button class="button">SUSCRIBITE</button>
+                </div>
+                <div id="footerRedes">
+                    <a class="sinHover" href="https://www.facebook.com/nagini3d/" Target="_blank"><button class="buttonRedes"><i class="fab fa-facebook-f"></i></button></a>
+                    <a class="sinHover" href="https://www.instagram.com/nagini3d/" Target="_blank"><button class="buttonRedes" Target="_blank"><i class="fab fa-instagram"></i></button></a>
+                    <a class="sinHover" href=""><button class="buttonRedes" Target="_blank"><i class="fab fa-whatsapp"></i></button></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="copyright">
+            <p class="text-center">COPYRIGHT © NAGINI 2022, ALL RIGHTS RESERVED </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+</body>
+</html>
