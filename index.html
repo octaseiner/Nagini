@@ -25,15 +25,45 @@
 
 <body>
     <header>
+
+         <!--Portada -->
+
+         <div id="slider-ng">
+            <figure>
+                <img src="imagenes/Home1.png" alt="">
+                <img src="imagenes/Home2.png" alt="">
+                <img src="imagenes/Home3.png" alt="">
+            </figure>
+            
+            <div class="portadaTexto">
+                <h1 class="fuenteMuyGrande negrita text-center">Imprimimos <br> tus ideas</h1>
+                <a href="#contactanos" class="responsiveNone"><button class="button">CONOCÉ MÁS</button></a>
+                <div id="liRedes" class="nav-item responsiveBlock redesResponsive">
+                    <a class="sinHover" href="https://www.facebook.com/nagini3d/" Target="_blank"><button class="buttonRedes"><i class="fab fa-facebook-f"></i></button></a>
+                    <a class="sinHover" href="https://www.instagram.com/nagini3d/" Target="_blank"><button class="buttonRedes" Target="_blank"><i class="fab fa-instagram"></i></button></a>
+                    <a class="sinHover" href=""><button class="buttonRedes" Target="_blank"><i class="fab fa-whatsapp"></i></i></button></a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Menu -->
+
         <nav class="navbar navbar-expand-lg navbar-dark ">
-            <div class="container-fluid">
+            
+            <div class="container-fluid contenedorNav">
+                <!--Logo-->
                 <div>
-                    <a id="logo" class="navbar-brand" href="#"><img src="./imagenes/logo.PNG" alt="logo"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    <a id="logo" class="navbar-brand" href="#">
+                        <img src="./imagenes/logo.PNG" alt="logo">
+                    </a>
+                    <button class="navbar-toggler navResponsive " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon navResponsive__icon"></span>
                     </button>
                 </div>
+                <!--Menu-->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
@@ -66,112 +96,139 @@
                 </div>
             </div>
         </nav>
+
     </header>
+
+
 
 
     <main>
 
-        <a  href="#"><button id="up"><i class="fas fa-chevron-up"></i></button></a>
-
-
-        <section id="home" class="d-flex flex-column justify-content-center align-items-center">
-            <h1 class="fuenteMuyGrande negrita text-center">Imprimimos <br> tus ideas</h1>
-            <a href="#contactanos"><button class="button">CONOCÉ MÁS</button></a>
-        </section>
-
+        <!--Boton flecha hacia arriba-->
+        <a href="#"><button id="up"><i class="fas fa-chevron-up"></i></button></a>
+        
+        <!--Sobre Nosotros-->
         <section id="nosotros" class="d-flex flex-row">
-            <div>
-                <img src="imagenes/sobre nosotros.png" alt="sobre nosotros">
-            </div>
+            <div class="row">
+                <div class="responsiveNone col-6">
+                    <img src="imagenes/sobrenosotros.png" alt="sobre nosotros">
+                </div>
 
-            <div id="sobreNosotros" class="d-flex flex-column justify-content-center w-100 paddingTexto">
-                <h2 class="colorSalmon fuenteChica fuente2">Sobre nosotros</h2>
-                <h3 class="colorVioleta fuenteMediana negrita">NAGINI 3D</h3>
-                <p class="colorVioleta">Es una startup familiar que nace de la fusión entre el amor por el detalle y la necesidad de ofrecer productos de calidad para aquellos que compartan el mismo sentimiento que nosotros. <br> <br>
-                    Principalmente nuestros productos se relacionan con el cine, series, anime/manga y la cultura asiatica. <br><br>
-                    Nuestro objetivo es brindar productos únicos y especiales fuera de serie a un precio asequible. <br><br>
-                    No solo imprimimos, sino que diseñamos y trabajamos con otras técnicas para llegar a un producto único.
-                    Desde la concepción de la idea, diseño, fabricación y post procesado ponemos hasta la última gota de sudor para que el producto cumpla nuestros estándares de calidad. <br><br>
-                    Este emprendimiento también viene a satisfacer nuestras ganas de aprender, diseñar y fabricar tratando de generar el menor impacto posible en el medio ambiente. La huella de carbono por fabricación in house es infinitesimal comparado con un producto fabricado en otra parte del mundo e importado, además nuestros productos son fabricados bajo demanda y pensados para durar, con lo cual tiene por ideal el reducir la cantidad de residuos o scrap generados. <br><br>
-                    Nagini 3D viene a tratar de romper los esquemas de producción y distribución normal, flexibilizando la producción y otorgándole al cliente el poder de personalización sobre su producto, algo impensable en termino de costos para productos fabricados en masa. 
+                <div id="sobreNosotros" class="d-flex flex-column justify-content-center paddingTexto ">
+                    <h2 class="colorSalmon fuenteChica fuente2">Sobre nosotros</h2>
+                    <h3 class="colorVioleta fuenteMediana negrita">NAGINI 3D</h3>
+                    <p class="colorTexto">Es una startup familiar que nace de la fusión entre el amor por el detalle y la necesidad de ofrecer productos de calidad para aquellos que compartan el mismo sentimiento que nosotros. <br>
+                        Principalmente nuestros productos se relacionan con el cine, series, anime/manga y la cultura asiatica. <br>
+                        Nuestro objetivo es brindar productos únicos y especiales fuera de serie a un precio asequible. <br><br>
+                        No solo imprimimos, sino que diseñamos y trabajamos con otras técnicas para llegar a un producto único.
+                        Desde la concepción de la idea, diseño, fabricación y post procesado ponemos hasta la última gota de sudor para que el producto cumpla nuestros estándares de calidad. <br><br>
+                        Este emprendimiento también viene a satisfacer nuestras ganas de aprender, diseñar y fabricar tratando de generar el menor impacto posible en el medio ambiente. La huella de carbono por fabricación in house es infinitesimal comparado con un producto fabricado en otra parte del mundo e importado, además nuestros productos son fabricados bajo demanda y pensados para durar, con lo cual tiene por ideal el reducir la cantidad de residuos o scrap generados. <br>
+                        Nagini 3D viene a tratar de romper los esquemas de producción y distribución normal, flexibilizando la producción y otorgándole al cliente el poder de personalización sobre su producto, algo impensable en termino de costos para productos fabricados en masa. 
                     </p>
+                </div>
+
+                <div class="responsiveBlock sobreNosotrosImg desktopBlock col-6">
+                    <img src="imagenes/sobrenosotros.png" alt="sobre nosotros">
+                </div>
             </div>
         </section>
 
+        <!--Productos-->
         <section id="productos" >
-            <div>
+
+            <div class="productosTitulo">
                 <h2 class="text-center fuenteGrande colorVioleta paddingTitulo negrita">NUESTROS PRODUCTOS</h2>
             </div>
 
-            <div class="row">
-                <div class="col-6 paddingCero">
-                    <img id="productosImg" src="imagenes/Home 3.png" width="100%" height="931px" alt="home 3">
+            <div class="row productosCaja">
+                <div class="col-6 productosCajaImg responsiveNone">
+                    <img id="productosImg" src="imagenes/Home3.png" alt="home 3">
                 </div>
 
                 <div class="col-6 d-flex flex-column justify-content-center align-items-center paddingTexto">
                     <h2 class="colorSalmon fuenteChica fuente2">3D Printers</h2>
                     <h3 class="colorVioleta fuenteMediana negrita text-center">NOMBRES DE LAS <br> IMPRESORAS</h3>
-                    <p class="colorVioleta text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, officiis iusto! Corrupti, necessitatibus optio consequuntur provident tenetur, eius quidem aliquam omnis in similique repellat sint repellendus? Ut soluta reiciendis qui, exercitationem autem, laborum maiores inventore eum, placeat totam nemo beatae quos rerum neque itaque illo quibusdam eveniet cumque veniam voluptatibus.</p>
+                    <p class="colorTexto text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, officiis iusto! Corrupti, necessitatibus optio consequuntur provident tenetur, eius quidem aliquam omnis in similique repellat sint repellendus? Ut soluta reiciendis qui, exercitationem autem, laborum maiores inventore eum, placeat totam nemo beatae quos rerum neque itaque illo quibusdam eveniet cumque veniam voluptatibus.</p>
                     <a href="#contactanos"><button class="button">CONTACTANOS</button></a>
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row productosCaja">
                 <div class="col-6 d-flex flex-column justify-content-center align-items-center paddingTexto">
                     <h2 class="colorSalmon fuenteChica fuente2">Impresiones en 3D</h2>
                     <h3 class="colorVioleta fuenteMediana negrita text-center">PROYECTOS <br> EN 3D</h3>
-                    <p class="colorVioleta text-center"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, corporis. Itaque quo quibusdam in praesentium quos eveniet accusamus ab consequatur obcaecati, vero nemo blanditiis commodi voluptatum omnis amet est iste ipsam cum error facere animi magni! Fugiat et est exercitationem doloremque deserunt amet nulla, eligendi ducimus, atque laboriosam sit tempore!</p>
+                    <p class="colorTexto text-center"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, corporis. Itaque quo quibusdam in praesentium quos eveniet accusamus ab consequatur obcaecati, vero nemo blanditiis commodi voluptatum omnis amet est iste ipsam cum error facere animi magni! Fugiat et est exercitationem doloremque deserunt amet nulla, eligendi ducimus, atque laboriosam sit tempore!</p>
                     <a href="#contactanos"><button class="button">CONTACTANOS</button></a>
                 </div>
 
-                <div class="col-6 paddingCero">
-                    <img src="imagenes/Productos 2.png" width="98.8%" height="931px" alt="producto 2">
+                <div class="col-6 productosCajaImg responsiveNone">
+                    <img src="imagenes/Productos2.png" alt="producto 2">
                 </div>
+
             </div>
+            <!--Imagenes de Productos para Responsive-->
+            <div class="desktopBlock responsiveBlock productosImgResponsive">
+                <img src="imagenes/Home3.png" alt="home 3">
+                <img src="imagenes/Productos2.png" alt="producto 2">
+            </div>
+
+
         </section>
+
+        <!--Clientes-->
 
         <section id="clientes">
             <div>
                 <h2 class="text-center fuenteGrande paddingTitulo negrita">NUESTROS CLIENTES</h2>
             </div>
 
-<!--             <div class="comillas">
-                <div>
-                    <img src="./imagenes/comillas.png" alt="comillas">
-                    <img src="./imagenes/comillasInv.png" alt="comillas invertidas">
-                </div>
-                <div>
-                    <img src="./imagenes/comillas.png" alt="comillas">
-                    <img src="./imagenes/comillasInv.png" alt="comillas invertidas">
-                </div>
-            </div> -->
 
             <div class="paddingBottom">
-                <div>
-                    <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, soluta. Magni esse et quae ipsa cum deleniti optio autem ut adipisci, alias repellendus doloribus at consequuntur. Iste esse error reiciendis ratione laborum, officiis voluptatibus impedit earum placeat quam! Eveniet et reiciendis labore dicta pariatur quidem nesciunt sapiente esse consectetur aut.</p>
+                <div class="clientesComentario">
+                    <div class="comillasCaja">
+                        <div class="comillasEspacio">“</div>
+                        <div class="comillasEspacio">”</div>
+                    </div>
+                    <p class="text-center clientesTexto">ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, soluta. Magni esse et quae ipsa cum deleniti optio autem ut adipisci, alias repellendus doloribus at consequuntur. Iste esse error reiciendis ratione laborum, officiis voluptatibus impedit earum placeat quam! Eveniet et reiciendis labore dicta pariatur quidem nesciunt sapiente esse consectetur aut.</p>
                     <p class="colorSalmon text-center">Nombre <br> @usuarioIg</p>
                 </div>
-                <div>
-                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio accusantium delectus et reiciendis tempora porro animi pariatur quasi expedita error praesentium rerum eius suscipit iusto, soluta commodi veniam perferendis quae voluptatum ad illum. Non, quis quas! Laudantium illum animi ab totam vero aspernatur rerum a dicta non. Voluptas, porro velit.</p>
+
+                <div class="clientesComentario">
+                    <div class="comillasCaja">
+                        <div class="comillasEspacio">“</div>
+                        <div class="comillasEspacio">”</div>
+                    </div>
+                    <p class="text-center clientesTexto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio accusantium delectus et reiciendis tempora porro animi pariatur quasi expedita error praesentium rerum eius suscipit iusto, soluta commodi veniam perferendis quae voluptatum ad illum. Non, quis quas! Laudantium illum animi ab totam vero aspernatur rerum a dicta non. Voluptas, porro velit.</p>
                     <p class="colorSalmon text-center">Nombre <br> @usuarioIg</p>
                 </div>
             </div>
 
             <div>
-                <div>
-                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, numquam atque mollitia quaerat aliquid magni similique voluptatibus deleniti ut quam cumque, doloribus harum eum natus. Beatae, eos soluta. Natus quod voluptatum adipisci eveniet sit facilis at odio consequatur, recusandae perferendis tempore alias placeat similique? Distinctio doloribus id cumque dicta eius!</p>
+                <div class="clientesComentario">
+                    <div class="comillasCaja">
+                        <div class="comillasEspacio">“</div>
+                        <div class="comillasEspacio">”</div>
+                    </div>
+                    <p class="text-center clientesTexto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, numquam atque mollitia quaerat aliquid magni similique voluptatibus deleniti ut quam cumque, doloribus harum eum natus. Beatae, eos soluta. Natus quod voluptatum adipisci eveniet sit facilis at odio consequatur, recusandae perferendis tempore alias placeat similique? Distinctio doloribus id cumque dicta eius!</p>
                     <p class="colorSalmon text-center">Nombre <br> @usuarioIg</p>
                 </div>
-                <div>
-                    <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam neque suscipit ipsam deserunt ducimus, laudantium doloremque? Magni quos incidunt, deserunt ratione dignissimos corporis voluptate a beatae fugiat veritatis, in expedita! Eum eaque vero repudiandae repellat cupiditate cum numquam hic velit consequatur? Minima maiores non molestias sed. Saepe voluptate ipsum nemo.</p>
+
+                <div class="clientesComentario">
+                    <div class="comillasCaja">
+                        <div class="comillasEspacio">“</div>
+                        <div class="comillasEspacio">”</div>
+                    </div>
+                    <p class="text-center clientesTexto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam neque suscipit ipsam deserunt ducimus, laudantium doloremque? Magni quos incidunt, deserunt ratione dignissimos corporis voluptate a beatae fugiat veritatis, in expedita! Eum eaque vero repudiandae repellat cupiditate cum numquam hic velit consequatur? Minima maiores non molestias sed. Saepe voluptate ipsum nemo.</p>
                     <p class="colorSalmon text-center">Nombre <br> @usuarioIg</p>
                 </div>
             </div>
 
-            <div>
+            <div class="clientesBoton">
                 <button class="button text-center">PEDINOS TU FIGURA FAVORITA</button>
             </div>
         </section>
+
+        <!--Preguntas-->
 
         <section id="preguntas">
             <h2 class="text-center fuenteGrande colorVioleta paddingTitulo negrita">PREGUNTAS FRECUENTES</h2>
@@ -293,10 +350,12 @@
                 </div>
             </div>
         </section>
+        
+        <!--Contacto-->
 
         <section id="contactanos">
             <h2 class="text-center fuenteGrande paddingTitulo negrita">CONTACTANOS</h2>
-            <form action="" class="container d-flex flex-column align-items-center w-100">
+            <form action="" class="container d-flex flex-column align-items-center w-100 formulario">
                 <div>
                     <input class="contactanosInput" type="text" placeholder="NOMBRE Y APELLIDO">
                     <input class="contactanosInput" type="email" placeholder="MAIL">
@@ -311,30 +370,31 @@
     </main>
 
 
-
-    <footer id="footer">
+    <!--Footer-->
+    <footer id="footer"> 
         <div id="footerLinks" class="row">
-            <div class="col-2 d-flex justify-content-center align-items-center">
-                <a href="#"><img src="./imagenes/logoGrande.png" width="200px" alt="logo"></a>
+            <div class="col-2 d-flex justify-content-center align-items-center logoFooter">
+                <a href="#"><img src="./imagenes/logoGrande.png"  alt="logo"></a>
             </div>
 
-            <div class="col-2 d-flex flex-column justify-content-center">
+            <div class="col-2 d-flex flex-column justify-content-center divFooter">
                 <a class="colorVioleta fuenteChica negrita" href="#">HOME</a>
                 <a class="colorVioleta fuenteChica negrita" href="#nosotros">SOBRE NOSOTROS</a>
                 <a class="colorVioleta fuenteChica negrita" href="#productos">PRODUCTOS</a>
             </div>
 
-            <div class="col-2 d-flex flex-column justify-content-center">
+            <div class="col-2 d-flex flex-column justify-content-center divFooter">
                 <a class="colorVioleta fuenteChica negrita" href="#clientes">NUESTROS CLIENTES</a>
                 <a class="colorVioleta fuenteChica negrita" href="#preguntas">PREGUNTAS FRECUENTES</a>
                 <a class="colorVioleta fuenteChica negrita" href="#contactanos">CONTACTANOS</a>
             </div>
 
             <div class="col-6 d-flex flex-column align-items-center">
-                <div>
+                <div class="botonFooter">
                     <input id="inputCorreo" class="colorVioleta negrita sombra" type="text" placeholder="CORREO">
-                    <button class="button">SUSCRIBITE</button>
+                    <button class="button boton">SUSCRIBITE</button>
                 </div>
+
                 <div id="footerRedes">
                     <a class="sinHover" href="https://www.facebook.com/nagini3d/" Target="_blank"><button class="buttonRedes"><i class="fab fa-facebook-f"></i></button></a>
                     <a class="sinHover" href="https://www.instagram.com/nagini3d/" Target="_blank"><button class="buttonRedes" Target="_blank"><i class="fab fa-instagram"></i></button></a>

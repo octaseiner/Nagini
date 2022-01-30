@@ -3,18 +3,26 @@
     margin: 0px;
     padding: 0px;
     font-family: $font1;
+    box-sizing: border-box;
+}
+.row>*{
+    padding:0px 0px 0px 0px;
+}
+.row{
+    margin: 0px 0px 0px 0px;
 }
 
 #up {
-    width: 50px;
-    height: 50px;
-    border: 3px solid $color2;
+    width: 3.125rem;
+    height: 3.125rem;
+    border: 0.1875rem solid $color2;
     border-radius: 50%;
     background-color: transparent;
     color: $color2;
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 1.25rem;
+    right: 1.25rem;
+    z-index: 100;
 }
 
 /* NAVBAR */
@@ -22,6 +30,7 @@
     position: absolute;
     top: 0;
     width: 95%;
+   
 
     div {
         display: flex;
@@ -35,20 +44,20 @@
 
             #logo {
                 color: $color2;
-                font-size: 60px;
-                padding: 0px 100px 0px 100px;
-                font-size: 50px;
+                font-size: 3.75rem;
+                padding: 0rem 6.25rem 0rem 6.25rem;
+                font-size: 3.125rem;
             }
 
             ul {
                 width: 100%;
-                height: 50px;
+                height: 3.125rem;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
 
                 #liRedes {
-                    width: 150px;
+                    width: 9.375rem;
                     display: flex;
                     justify-content: space-between;
                 }
@@ -61,7 +70,7 @@
                     a {
                         color: $color3;
                         text-decoration: none;
-                        height: 30px;
+                        height: 1.875rem;
                     }
 
                     a:hover {
@@ -78,28 +87,75 @@
     }
 }
 
+// ------ PORTADA -------
 
-/* MAIN  */
-#home {
-    width: 100%;
+   #slider-ng{
+    overflow: hidden;
+    width: 100vw;
     height: 100vh;
-    background-image: url(../imagenes/Home1.png);
-    color: $color3;
-}
-
-/* #productos {
-
-}
- */
-#nosotros {
-    #sobreNosotros {
-        padding: 0px 150px 0px 150px;
+    display: flex;
+    align-items: center;
+    figure{
+        position: relative;
+        display:flex;
+        line-height:0;
+        animation: 15s slider infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-in;
+        img{
+            height: 100vh;
+            width: 100vw; 
+            object-fit: cover;
+            
+        }
+        @keyframes slider {
+            0% { margin-left: 0; } 
+            20% { margin-left: 0%; } 
+            25% { margin-left: -100%; } 
+            60% { margin-left: -100%; }
+            80% { margin-left: -200%; }
+            100% { margin-left: -200%; }
+            
+        }
+    }
+    .portadaTexto{
+        width: 100vw;
+        position: absolute;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3rem;
+        .redesResponsive{
+            width: 10rem;
+            display: flex;
+            justify-content: space-between;
+        }
     }
 }
 
+// ------ SOBRE NOSOTROS -------
+#nosotros {
+    height: 100vh;
+    .responsiveNone{
+        padding: 0px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    #sobreNosotros {
+        padding: 2rem 5.375rem 0rem 5.375rem;
+        width: 50vw;
+        align-content: center;
+    }
+}
+
+// ------- PREGUNTAS -------
+
 #preguntas {
     #accordionExample{
-        margin-bottom: 100px;
+        margin-bottom: 6.25rem;
     }
 
     .accordion-button {
@@ -111,15 +167,18 @@
     }
 
     .acordion {
-        border-bottom: 1px solid $color1;
-        padding: 10px 150px 10px 150px;
+        border-bottom: 0.0625rem solid $color1;
+        padding: 0.625rem 9.375rem 0.625rem 9.375rem;
     }    
 }
+
+// ------- CLIENTES -------
 
 #clientes {
     width: 100%;
     color: $color3;
     background-image: url(../imagenes/nuestrosClientes.png);
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -133,52 +192,75 @@
         justify-content: space-around;
         align-items: center;
 
+
         div {
-            width: 30%;
+            width: 32%;
             display: flex;
             flex-direction: column;
-            padding-bottom: 50px;
-            font-size: 17px;
+            padding-bottom: 3.125rem;
+            font-size: 1.0625rem;
+            /* comillas */
+   
+            .comillasCaja{
+                color: $color2;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-content: flex-end;
+                height: 30px;
+                padding: 0;
+                
+                .comillasEspacio{
+                    font-size: 5rem;
+                    padding: 0;
+                    height: 30px;
+                    width: 20px;
+                }
+            }
+            .clientesTexto{
+                padding: 0rem 1rem 0rem 1rem;
+            }
         };
     }
 
-/*     .comillas {
-        width: 85%;
-        height: 50px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        border: solid red;
+    .clientesBoton{
+        margin-bottom: 3rem;
+    }
 
-        div {
-            width: 40%;
-            height: 50px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            border: solid yellow;
-
-            
-            img {
-                border: solid blue;
-            };
-        }
-    } */
 }
 
+ // ------- PRODUCTOS -------
+ #productos{
+    width: 100vw;
+    padding: 0px;
+    .productosCaja{
+        height: 100vh;
+        width: 100%;
+        .productosCajaImg{
+            height: 100%;
+            img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}
+
+// ------- CONTACTO -------
 #contactanos {
     color: $color3;
     background-image: url(../imagenes/Contactanos.png);
 
     .contactanosInput {
-        width: 300px;
-        height: 50px;
+        width: 18.75rem;
+        height: 3.125rem;
         background: transparent;
-        border: 1px solid $color3;
-        border-radius: 10px;
+        border: 0.0625rem solid $color3;
+        border-radius: 0.625rem;
         color: $color3;
-        padding: 5px 30px 5px 30px;
-        margin: 20px;
+        padding: 0.3125rem 1.875rem 0.3125rem 1.875rem;
+        margin: 1.25rem;
     }
     
     .contactanosInput::placeholder {
@@ -186,14 +268,14 @@
     }
     
     .textarea {
-        width: 1000px;
-        height: 100px;
+        width: 62.5rem;
+        height: 6.25rem;
         background: transparent;
-        border: 1px solid $color3;
-        border-radius: 10px;
+        border: 0.0625rem solid $color3;
+        border-radius: 0.625rem;
         color: $color3;
-        padding: 5px 30px 5px 30px;
-        margin: 20px;
+        padding: 0.3125rem 1.875rem 0.3125rem 1.875rem;
+        margin: 1.25rem;
     }
     
     .textarea::placeholder {
@@ -202,22 +284,25 @@
 }
 
 
-
-
-/* FOOTER */
+// ------- FOOTER -------esy deben
 #footer {
     #footerLinks {
-        padding: 100px 50px 100px 50px;
+        padding: 6.25rem 3.125rem 6.25rem 0.125rem;
+        .logoFooter{
+            img{
+                 width: 12.5rem;
+            }
+        }
 
         #inputCorreo {
-            width: 450px;
-            height: 60px;
+            width: 28.125rem;
+            height: 3.75rem;
             background: transparent;
-            border: 1px solid $color2;
-            border-radius: 10px;
+            border: 0.0625rem solid $color2;
+            border-radius: 0.625rem;
             color: $color3;
-            padding: 5px 30px 5px 30px;
-            margin: 20px;
+            padding: 0.3125rem 1.875rem 0.3125rem 1.875rem;
+            margin: 1.25rem;
         }
 
         #inputCorreo::placeholder {
@@ -225,7 +310,7 @@
         }
 
         .sombra {
-            box-shadow: 0 0 10px rgb(199, 199, 199);
+            box-shadow: 0 0 0.625rem rgb(199, 199, 199);
         }
     }
 
@@ -241,7 +326,7 @@
         background-color: $color4;
         color: $color3;
         font-size: 70%;
-        padding: 30px 0px 20px 0px;
+        padding: 1.875rem 0rem 1.25rem 0rem;
     }
 
     #footerRedes {
@@ -251,29 +336,25 @@
     }
 }
 
-
-
-
-
 /* CLASES */
 /* BOTONES */
 .button {
     background-color: $color2;
     color: $color3;
-    padding: 20px 60px 20px 60px;
+    padding: 1.25rem 3.75rem 1.25rem 3.75rem;
     border: none;
-    border-radius: 15px;
-    margin: 50px 0px 50px 0px;
+    border-radius: 0.9375rem;
+    margin: 3.125rem 0rem 3.125rem 0rem;
 }
 
 .buttonRedes {
-    width: 35px;
-    height: 35px;
+    width: 2.1875rem;
+    height: 2.1875rem;
     background-color: $color2;
     color: $color3;
-    padding: 5px;
+    padding: 0.3125rem;
     border: none;
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 /* COLORES */
@@ -284,22 +365,26 @@
 .colorVioleta {
     color: $color1;
 }
+.colorTexto{
+    color: $color5;
+    margin-top: 1.5rem;
+}
 
 /* FUENTES */
 .fuenteMuyGrande {
-    font-size: 140px;
+    font-size: 6.75rem;
 }
 
 .fuenteGrande {
-    font-size: 60px;
+    font-size: 3.75rem;
 }
 
 .fuenteMediana {
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 
 .fuenteChica {
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .negrita {
@@ -316,27 +401,242 @@
 
 /* PADDINGS */
 .paddingTexto {
-    padding: 0px 200px 0px 200px;
+    padding: 0rem 12.5rem 0rem 12.5rem;
 }
 
 .paddingTitulo {
-    padding: 130px 0px 130px 0px;
+    padding: 8.125rem 0rem 8.125rem 0rem;
 }
 
 .paddingBottom {
-    padding-bottom: 100px;
+    padding-bottom: 6.25rem;
 }
 
 .paddingCero {
-    padding: 0px;
+    padding: 0rem;
+}
+.desktopBlock{
+    display: none;
 }
 
+/* --------  RESPONSIVE   -------*/
 
 
+@media only screen and (max-width: 800px){
+    *{
+        font-size: 12px;
+    }
+    .responsiveBlock{
+        display:block;
+    }
+   
+    .responsiveNone{
+        display: none;
+    }
+    //Tamaño fuentes
+        .fuenteMuyGrande {
+            font-size: 4.75rem;
+        }
+
+    .fuenteGrande {
+        font-size: 2rem;
+    }
+    
+
+    .paddingTitulo{
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+    }
+    //Menu 
+    .navbar{
+        width: 100vw;
+
+        
+        div {
+            div {
+                width: 100vw;
+                justify-content: flex-end;
+            
+                ul{
+                    height: 80vh;
+                    width: 15.8rem;
+                    background-color: #c88599;
+                    border-bottom-left-radius: 20px;
+                    border-top-left-radius: 20px;
+                }
+
+                #logo {
+                    color: $color2;
+                    padding: 1.2rem;
+                    font-size:2.125rem;
+                    margin-right: auto;
 
 
+                    img{
+                        width: 6rem;
+                    }
+                }
+                .navResponsive{
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    border:none;
+                    &__icon{
+                        color: $color2;
+                        width: 2.5rem;
+                        height: 2.5rem;
+                    }
+                    
+                }
+            }
+        }
+        
+    }
 
+    .contenedorNav{
+        padding: 0;
+    }
+    //menu
+    .navbar-collapse{
+        align-items: flex-end;
+    }
+    .show{
+        height: 80vh;
+        width: 0vw;
+        margin-left: .6rem;
+        border-right: solid #c88599 5px;
+        
+        .navbar-nav{
+            flex-direction: column;
+            padding: 4rem 2rem 0 0;
+            align-items: flex-end;
+            justify-content: flex-start;
+            gap: 3rem;
+            ul{
+                height: 10rem;
+            }
+        }
+    }
+    
+    //Sobre Nosotros
 
+    #nosotros {
+        height:auto;
+        #sobreNosotros {
+            width: 100%;
+            padding: 2rem 3.375rem 0rem 3.375rem;
+        }
+        .sobreNosotrosImg{
+            width: 100vw;
+            height: 30vh;
+            display: flex;
+            justify-content: center;
+            img{
+                width: 90%;
+            }
+        }
+        .row{
+            width: 100vw;
+        }
+    }
 
+    //Productos
 
+   #productos{
+        
+        .productosCaja{
+            height: 50vh;
+        }
+        .paddingTexto{
+            padding: 0rem 3.5rem 0rem 3.5rem;
+            width: 100%;
+        }
+        .productosImgResponsive{
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 4rem;
+            img{
+                width: 40%;
+            }
+        }
+   }
 
+    //CLIENTES
+
+    #clientes {
+        background-position: center;
+
+        div {
+            width: 100%;
+            flex-direction: column;
+            padding: 0 1.3rem 0 1.3rem;
+
+            div {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                padding-bottom: 3.125rem;
+                font-size: 1.0625rem;
+            };
+        }
+
+    }
+
+    //Preguntas
+
+    #preguntas{
+        .acordion{
+            padding: 0.625rem;
+        }
+    }
+
+    //Contacto
+
+    #contactanos {
+            div{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+        .textarea {
+            width: 20rem;
+            
+        }
+    }
+
+    //Footer
+
+    #footer {  
+        #footerLinks {
+            padding: 0px;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            .logoFooter{
+                margin: auto;
+                img{
+                     width: 12.5rem;
+                }
+            }
+            .divFooter{
+                margin: auto;
+                width: 25%;
+                text-align: center;
+            }
+            #inputCorreo{
+                width: 23rem;
+                height: 3.125rem;
+                border: solid blueviolet;
+            }
+        }
+        .botonFooter{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #footerRedes{
+            display: none;
+        } 
+    }
+}
