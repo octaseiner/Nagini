@@ -120,7 +120,7 @@
       height: 100%; }
   #nosotros #sobreNosotros {
     padding: 2rem 5.375rem 0rem 5.375rem;
-    width: 50vw;
+    /*         width: 50vw; */
     align-content: center; }
 
 #preguntas #accordionExample {
@@ -399,7 +399,8 @@
   #productos .productosImgResponsive {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 4rem; }
+    margin-bottom: 4rem;
+    margin-top: 4rem; }
     #productos .productosImgResponsive img {
       width: 40%; }
   #clientes {
@@ -416,6 +417,9 @@
         font-size: 1.0625rem; }
   #preguntas .acordion {
     padding: 0.625rem; }
+  #preguntas .accordion-body {
+    padding: 0.625rem;
+    width: 80vw; }
   #contactanos div {
     display: flex;
     flex-direction: column;

@@ -30,7 +30,7 @@
     position: absolute;
     top: 0;
     width: 95%;
-   
+
 
     div {
         display: flex;
@@ -89,7 +89,7 @@
 
 // ------ PORTADA -------
 
-   #slider-ng{
+    #slider-ng{
     overflow: hidden;
     width: 100vw;
     height: 100vh;
@@ -146,7 +146,7 @@
     }
     #sobreNosotros {
         padding: 2rem 5.375rem 0rem 5.375rem;
-        width: 50vw;
+/*         width: 50vw; */
         align-content: center;
     }
 }
@@ -200,7 +200,7 @@
             padding-bottom: 3.125rem;
             font-size: 1.0625rem;
             /* comillas */
-   
+
             .comillasCaja{
                 color: $color2;
                 width: 100%;
@@ -231,7 +231,7 @@
 }
 
  // ------- PRODUCTOS -------
- #productos{
+#productos{
     width: 100vw;
     padding: 0px;
     .productosCaja{
@@ -290,7 +290,7 @@
         padding: 6.25rem 3.125rem 6.25rem 0.125rem;
         .logoFooter{
             img{
-                 width: 12.5rem;
+                width: 12.5rem;
             }
         }
 
@@ -429,7 +429,7 @@
     .responsiveBlock{
         display:block;
     }
-   
+
     .responsiveNone{
         display: none;
     }
@@ -589,6 +589,11 @@
         .acordion{
             padding: 0.625rem;
         }
+
+        .accordion-body {
+            padding: 0.625rem;
+            width: 80vw;
+        }
     }
 
     //Contacto
@@ -616,7 +621,7 @@
             .logoFooter{
                 margin: auto;
                 img{
-                     width: 12.5rem;
+                    width: 12.5rem;
                 }
             }
             .divFooter{
